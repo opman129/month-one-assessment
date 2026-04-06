@@ -1,0 +1,17 @@
+region          = "us-east-1"
+project_name    = "techcorp"
+
+vpc_cidr        = "10.0.0.0/16"
+
+public_subnets  = ["10.0.1.0/24", "10.0.2.0/24"]
+private_subnets = ["10.0.3.0/24", "10.0.4.0/24"]
+
+instance_types = {
+  bastion = "t3.micro"
+  web     = "t3.micro"
+  db      = "t3.small"
+}
+
+key_pair_name = "tech-corp"
+
+allowed_ip    = "102.89.34.28/32"
